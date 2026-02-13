@@ -1,0 +1,9 @@
+{
+  "name": "acnh-recipe-checker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:data": "python3 scripts/fetch_recipes.py",
+    "serve": "python3 -m http.server 5500"
+  }
+}
