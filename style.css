@@ -46,6 +46,7 @@ body {
 
 .filter-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -188,6 +189,36 @@ body {
   align-items: center;
   gap: 6px;
   cursor: pointer;
+}
+
+.to-top-btn {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.to-top-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.to-top-btn:hover {
+  border-color: var(--brand);
 }
 
 @media (max-width: 620px) {

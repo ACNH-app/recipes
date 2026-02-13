@@ -17,6 +17,11 @@
         <div class="filter-group" id="categoryFilters">
           <button class="filter active" data-category="all">전체</button>
         </div>
+        <div class="filter-group" id="ownedFilters">
+          <button class="filter active" data-owned="all">전체 보기</button>
+          <button class="filter" data-owned="owned">보유한 것만</button>
+          <button class="filter" data-owned="unowned">미보유만</button>
+        </div>
         <div class="bulk-actions">
           <button class="bulk-btn" id="markVisibleOwned">전체 레시피 보유</button>
           <button class="bulk-btn" id="unmarkVisibleOwned">전체 레시피 해제</button>
@@ -30,6 +35,7 @@
       <section class="stats" id="stats"></section>
       <section class="grid" id="recipeGrid"></section>
     </main>
+    <button class="to-top-btn" id="toTopButton" aria-label="맨 위로">↑</button>
 
     <template id="recipeCardTemplate">
       <article class="card">
@@ -14853,6 +14859,7 @@
 
       let allRecipes = [];
       let currentCategory = "all";
+      let currentOwnedFilter = "all";
       let searchText = "";
       let ownedIds = new Set(
         JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"),
@@ -14862,8 +14869,10 @@
       const stats = document.getElementById("stats");
       const searchInput = document.getElementById("searchInput");
       const categoryFilters = document.getElementById("categoryFilters");
+      const ownedFilters = document.getElementById("ownedFilters");
       const markVisibleOwnedBtn = document.getElementById("markVisibleOwned");
       const unmarkVisibleOwnedBtn = document.getElementById("unmarkVisibleOwned");
+      const toTopButton = document.getElementById("toTopButton");
       const cardTemplate = document.getElementById("recipeCardTemplate");
 
       function saveOwned() {
@@ -14880,12 +14889,17 @@
         return allRecipes.filter((recipe) => {
           const categoryMatch =
             currentCategory === "all" || recipe.category_en === currentCategory;
+          const isOwned = ownedIds.has(recipe.id);
+          const ownedMatch =
+            currentOwnedFilter === "all" ||
+            (currentOwnedFilter === "owned" && isOwned) ||
+            (currentOwnedFilter === "unowned" && !isOwned);
           const keyword = searchText.trim().toLowerCase();
           const textMatch =
             !keyword ||
             (recipe.name_ko || "").toLowerCase().includes(keyword) ||
             (recipe.name_en || "").toLowerCase().includes(keyword);
-          return categoryMatch && textMatch;
+          return categoryMatch && ownedMatch && textMatch;
         });
       }
 
@@ -15027,6 +15041,17 @@
           renderRecipes();
         });
 
+        ownedFilters.addEventListener("click", (e) => {
+          const button = e.target.closest(".filter");
+          if (!button) return;
+          currentOwnedFilter = button.dataset.owned || "all";
+
+          for (const item of ownedFilters.querySelectorAll(".filter")) {
+            item.classList.toggle("active", item === button);
+          }
+          renderRecipes();
+        });
+
         markVisibleOwnedBtn.addEventListener("click", () => {
           for (const recipe of allRecipes) {
             ownedIds.add(recipe.id);
@@ -15041,6 +15066,15 @@
           }
           saveOwned();
           renderRecipes();
+        });
+
+        window.addEventListener("scroll", () => {
+          const show = window.scrollY > 280;
+          toTopButton.classList.toggle("show", show);
+        });
+
+        toTopButton.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
         });
       }
 
