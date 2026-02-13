@@ -48,6 +48,12 @@ python3 -m http.server 5500
 
 - `http://localhost:5500`
 
+## 4) GitHub Pages
+
+배포된 페이지:
+
+- `https://acnh-app.github.io/recipes/`
+
 ## 데이터 형식
 
 `recipes.json`의 각 항목은 아래 필드를 포함합니다.
