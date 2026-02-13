@@ -261,6 +261,113 @@ def _unique_keep_order(values: list[str]) -> list[str]:
     return result
 
 
+def normalize_source_text(source: str) -> str:
+    value = normalize_text(source)
+    if not value:
+        return ""
+
+    replacements = {
+        "Any villager Restaurant": "Any villager, Restaurant",
+        "Any villager Balloons": "Any villager, Balloons",
+        "Balloons Any villager": "Balloons, Any villager",
+        "Balloons Message bottle": "Balloons, Message bottle",
+        "Celeste Message bottle": "Celeste, Message bottle",
+        "Message bottle Balloon": "Message bottle, Balloons",
+        "Any villager Be a Chef! DIY Recipes+": "Any villager, Be a Chef! DIY Recipes+",
+        "Any villager Tom Nook": "Any villager, Tom Nook",
+        "Blathers Nook's Cranny": "Blathers, Nook's Cranny",
+        "Leif Tom Nook": "Leif, Tom Nook",
+        "Nook's Cranny Dig spot": "Nook's Cranny, Dig spot",
+        "Nook's Cranny Message bottle": "Nook's Cranny, Message bottle",
+        "Tom Nook Big sister villager": "Tom Nook, Big sister villager",
+        "Tom Nook Cranky villager": "Tom Nook, Cranky villager",
+        "Tom Nook Jock villager": "Tom Nook, Jock villager",
+        "Tom Nook Lazy villager": "Tom Nook, Lazy villager",
+        "Tom Nook Nook's Cranny": "Tom Nook, Nook's Cranny",
+        "Tom Nook Normal villager": "Tom Nook, Normal villager",
+        "Tom Nook Peppy villager": "Tom Nook, Peppy villager",
+        "Tom Nook Smug villager": "Tom Nook, Smug villager",
+        "Tom Nook Snooty villager": "Tom Nook, Snooty villager",
+        "Tom Nook Test Your DIY Skills": "Tom Nook, Test Your DIY Skills",
+        "Jock villager Nintendo": "Jock villager, Nintendo",
+    }
+    value = replacements.get(value, value)
+    value = re.sub(r"\s*,\s*", ", ", value).strip(" ,")
+    return value
+
+
+def normalize_source_ko_text(source_en: str, source_ko: str) -> str:
+    value = normalize_text(source_ko)
+    if not value:
+        return ""
+
+    source_en_tokens = [normalize_text(token) for token in source_en.split(",") if normalize_text(token)]
+    ko_map = {
+        "Nook's Cranny": "너굴상점",
+        "Nook Stop": "너굴 포트",
+        "Message bottle": "메시지 보틀",
+        "Balloons": "풍선",
+        "Rocks": "바위",
+        "Fishing": "낚시",
+        "Farway Museum": "파어웨이 박물관",
+        "Bunny Day": "이스터 (부활절 이벤트)",
+        "Snowboy": "눈사람",
+        "DIY for Beginners": "첫 DIY 레시피",
+        "Test Your DIY Skills": "도전! DIY 레시피",
+        "Wildest Dreams DIY": "무엇이든 뚝딱!? DIY 레시피",
+        "Basic Cooking Recipes": "간단! 쿠킹 레시피",
+        "Be a Chef! DIY Recipes+": "요리도 DIY! 레시피+",
+        "Pretty Good Tools Recipes": "언제나 쓸 수 있는 도구 레시피",
+        "Custom Fencing in a Flash": "울타리 리메이크 기법",
+        "Cozy Turkey Day DIY": "포근한 추수감사절 DIY",
+        "Turkey Day Recipes": "추수감사절 레시피",
+        "Any villager": "주민",
+        "Cyrus": "리포",
+        "Daisy Mae": "무파니",
+        "Gulliver": "죠니",
+        "Harvey": "파니엘 (파니)",
+        "Jack": "펌킹(할로윈)",
+        "Jingle": "루돌(크리스마스)",
+        "Leif": "늘봉",
+        "Niko": "방글(해피홈파라다이스)",
+        "Pascal": "해탈한",
+        "Pavé": "카니발이벤트의 베르리나",
+        "Zipper": "토빗(부활절)",
+    }
+
+    # If source_en contains explicit Nook's Cranny/Nook Stop, rebuild those parts from source_en tokens.
+    if any(token in ko_map for token in source_en_tokens):
+        rebuilt_tokens = [ko_map.get(token, token) for token in source_en_tokens]
+        value = ", ".join(rebuilt_tokens)
+    else:
+        value = re.sub(r"메시지\s*병", "메시지 보틀", value)
+        value = re.sub(r"Balloons", "풍선", value, flags=re.I)
+        value = re.sub(r"Any villager", "주민", value, flags=re.I)
+        value = re.sub(r"Cyrus", "리포", value, flags=re.I)
+        value = re.sub(r"Daisy Mae", "무파니", value, flags=re.I)
+        value = re.sub(r"Gulliver", "죠니", value, flags=re.I)
+        value = re.sub(r"Harvey", "파니엘 (파니)", value, flags=re.I)
+        value = re.sub(r"Jack", "펌킹(할로윈)", value, flags=re.I)
+        value = re.sub(r"Jingle", "루돌(크리스마스)", value, flags=re.I)
+        value = re.sub(r"Leif", "늘봉", value, flags=re.I)
+        value = re.sub(r"Niko", "방글(해피홈파라다이스)", value, flags=re.I)
+        value = re.sub(r"Pascal", "해탈한", value, flags=re.I)
+        value = re.sub(r"Pavé", "카니발이벤트의 베르리나", value, flags=re.I)
+        value = re.sub(r"Zipper", "토빗(부활절)", value, flags=re.I)
+        value = re.sub(r"Nook\s*Stop", "너굴 마일 교환", value, flags=re.I)
+        value = re.sub(r"Nook'?s\s*Cranny", "너굴상점", value, flags=re.I)
+        value = re.sub(r"Celeste", "부옥이", value, flags=re.I)
+        value = re.sub(r"셀레스트", "부옥이", value)
+        value = re.sub(r"누크의?\s*크(?:래|래)니|누크의?\s*크니", "너굴상점", value)
+
+    value = re.sub(r"\s*,\s*", ", ", value).strip(" ,")
+    value = re.sub(r"너굴상점\s+메시지\s*보틀", "너굴상점, 메시지 보틀", value)
+    value = re.sub(r"메시지\s*병", "메시지 보틀", value)
+    value = re.sub(r"Celeste", "부옥이", value, flags=re.I)
+    value = re.sub(r"셀레스트", "부옥이", value)
+    return value
+
+
 def get_source_cell_text(cells, idx: int) -> str:
     if idx < 0 or idx >= len(cells):
         return ""
@@ -272,7 +379,7 @@ def get_source_cell_text(cells, idx: int) -> str:
     ]
     li_values = _unique_keep_order([v for v in li_values if v and not re.fullmatch(r"\[\d+\]", v)])
     if li_values:
-        return " / ".join(li_values)
+        return normalize_source_text(", ".join(li_values))
 
     lines = [
         normalize_text(line)
@@ -280,9 +387,9 @@ def get_source_cell_text(cells, idx: int) -> str:
     ]
     lines = _unique_keep_order([v for v in lines if v and not re.fullmatch(r"\[\d+\]", v)])
     if lines:
-        return " / ".join(lines)
+        return normalize_source_text(", ".join(lines))
 
-    return get_cell_text(cells, idx)
+    return normalize_source_text(get_cell_text(cells, idx))
 
 
 def _pick_first_srcset_url(value: str) -> str:
@@ -455,12 +562,14 @@ def parse_category(source: dict[str, str], cache: dict[str, str]) -> list[dict]:
         source_en = get_source_cell_text(cells, indexes["source"])
         if not source_en and href:
             source_en = get_source_from_detail_page(href, detail_page_cache)
+        source_en = normalize_source_text(source_en)
         buy_price = get_cell_text(cells, indexes["buy"])
         sell_price = get_cell_text(cells, indexes["sell"])
 
         name_ko = translate_to_ko(name_en, cache)
         materials_ko = translate_to_ko(materials_en, cache) if materials_en else ""
         source_ko = translate_to_ko(source_en, cache) if source_en else ""
+        source_ko = normalize_source_ko_text(source_en, source_ko)
 
         recipes.append(
             {
