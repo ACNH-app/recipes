@@ -2266,7 +2266,7 @@
     "materials_en": "4× Log stakes 4× Clay 4× Stone",
     "materials_ko": "4× 통나무 말뚝 4× 점토 4× 돌",
     "source_en": "Tom Nook",
-    "source_ko": "톰 누크",
+    "source_ko": "너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -2282,7 +2282,7 @@
     "materials_en": "15× Wood 15× Softwood 15× Hardwood 15× Iron nugget",
     "materials_ko": "나무 15× 침엽수 15× 견목 15× 철 덩어리 15×",
     "source_en": "Tom Nook",
-    "source_ko": "톰 누크",
+    "source_ko": "너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -3098,7 +3098,7 @@
     "materials_en": "10× Clump of weeds 5× Tree branch 2× Stone",
     "materials_ko": "10× 잡초 덩어리 5× 나뭇가지 2× 돌",
     "source_en": "Leif, Tom Nook",
-    "source_ko": "늘봉 톰 누크",
+    "source_ko": "늘봉 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -3282,7 +3282,7 @@
   {
     "id": "flimsy_axe",
     "name_en": "Flimsy axe",
-    "name_ko": "허술한 도끼",
+    "name_ko": "엉성한 도끼",
     "category_en": "Tools",
     "category_ko": "도구",
     "image_url": "https://dodo.ac/np/images/a/ac/Flimsy_Axe_NH_DIY_Icon.png",
@@ -3290,7 +3290,7 @@
     "materials_en": "5× Tree branch 1× Stone",
     "materials_ko": "5× 나뭇가지 1× 돌",
     "source_en": "Tom Nook, Nook's Cranny",
-    "source_ko": "Tom Nook, 너굴상점",
+    "source_ko": "너굴, 너굴상점",
     "buy_price": "280 Bells",
     "sell_price": "",
     "owned": false
@@ -3320,7 +3320,7 @@
     "image_url": "https://dodo.ac/np/images/8/8b/Axe_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Axe_(New_Horizons)",
     "materials_en": "1× Flimsy axe 3× Wood 1× Iron nugget",
-    "materials_ko": "1× 허술한 도끼 3× 나무 1× 철 덩어리",
+    "materials_ko": "1× 엉성한 도끼 3× 나무 1× 철 덩어리",
     "source_en": "Pretty Good Tools Recipes",
     "source_ko": "언제나 쓸 수 있는 도구 레시피",
     "buy_price": "3,000 Nook Miles",
@@ -3330,7 +3330,7 @@
   {
     "id": "flimsy_shovel",
     "name_en": "Flimsy shovel",
-    "name_ko": "허술한 삽",
+    "name_ko": "엉성한 삽",
     "category_en": "Tools",
     "category_ko": "도구",
     "image_url": "https://dodo.ac/np/images/c/c3/Flimsy_Shovel_NH_DIY_Icon.png",
@@ -3352,7 +3352,7 @@
     "image_url": "https://dodo.ac/np/images/a/a5/Shovel_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Shovel_(New_Horizons)",
     "materials_en": "1× Flimsy shovel 1× Iron nugget",
-    "materials_ko": "1× 허술한 삽 1× 철 덩어리",
+    "materials_ko": "1× 엉성한 삽 1× 철 덩어리",
     "source_en": "Pretty Good Tools Recipes",
     "source_ko": "언제나 쓸 수 있는 도구 레시피",
     "buy_price": "3,000 Nook Miles",
@@ -3362,7 +3362,7 @@
   {
     "id": "flimsy_fishing_rod",
     "name_en": "Flimsy fishing rod",
-    "name_ko": "허술한 낚싯대",
+    "name_ko": "엉성한 낚싯대",
     "category_en": "Tools",
     "category_ko": "도구",
     "image_url": "https://dodo.ac/np/images/b/b3/Flimsy_Fishing_Rod_NH_DIY_Icon.png",
@@ -3370,7 +3370,7 @@
     "materials_en": "5× Tree branch",
     "materials_ko": "5× 나뭇가지",
     "source_en": "Tom Nook",
-    "source_ko": "톰 누크",
+    "source_ko": "너굴",
     "buy_price": "280 Bells",
     "sell_price": "",
     "owned": false
@@ -3384,7 +3384,7 @@
     "image_url": "https://dodo.ac/np/images/5/5e/Fishing_Rod_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Fishing_rod_(New_Horizons)",
     "materials_en": "1× Flimsy fishing rod 1× Iron nugget",
-    "materials_ko": "1× 허술한 낚싯대 1× 철 덩어리",
+    "materials_ko": "1× 엉성한 낚싯대 1× 철 덩어리",
     "source_en": "Pretty Good Tools Recipes",
     "source_ko": "언제나 쓸 수 있는 도구 레시피",
     "buy_price": "3,000 Nook Miles",
@@ -3394,7 +3394,7 @@
   {
     "id": "flimsy_net",
     "name_en": "Flimsy net",
-    "name_ko": "허술한 그물",
+    "name_ko": "엉성한 그물",
     "category_en": "Tools",
     "category_ko": "도구",
     "image_url": "https://dodo.ac/np/images/5/5e/Flimsy_Net_NH_DIY_Icon.png",
@@ -3402,7 +3402,7 @@
     "materials_en": "5× Tree branch",
     "materials_ko": "5× 나뭇가지",
     "source_en": "Tom Nook",
-    "source_ko": "톰 누크",
+    "source_ko": "너굴",
     "buy_price": "280 Bells",
     "sell_price": "",
     "owned": false
@@ -3416,7 +3416,7 @@
     "image_url": "https://dodo.ac/np/images/e/e3/Net_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Net_(New_Horizons)",
     "materials_en": "1× Flimsy net 1× Iron nugget",
-    "materials_ko": "1× 허술한 그물 1× 철 덩어리",
+    "materials_ko": "1× 엉성한 그물 1× 철 덩어리",
     "source_en": "Pretty Good Tools Recipes",
     "source_ko": "언제나 쓸 수 있는 도구 레시피",
     "buy_price": "3,000 Nook Miles",
@@ -3426,7 +3426,7 @@
   {
     "id": "flimsy_watering_can",
     "name_en": "Flimsy watering can",
-    "name_ko": "허술한 물뿌리개",
+    "name_ko": "엉성한 물뿌리개",
     "category_en": "Tools",
     "category_ko": "도구",
     "image_url": "https://dodo.ac/np/images/6/6d/Flimsy_Watering_Can_NH_DIY_Icon.png",
@@ -3434,7 +3434,7 @@
     "materials_en": "5× Softwood",
     "materials_ko": "침엽수 5개",
     "source_en": "Tom Nook, Nook's Cranny",
-    "source_ko": "Tom Nook, 너굴상점",
+    "source_ko": "너굴, 너굴상점",
     "buy_price": "280 Bells",
     "sell_price": "",
     "owned": false
@@ -3448,7 +3448,7 @@
     "image_url": "https://dodo.ac/np/images/1/19/Watering_Can_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Watering_can_(New_Horizons)",
     "materials_en": "1× Flimsy watering can 1× Iron nugget",
-    "materials_ko": "1× 허술한 물뿌리개 1× 철 덩어리",
+    "materials_ko": "1× 엉성한 물뿌리개 1× 철 덩어리",
     "source_en": "Pretty Good Tools Recipes",
     "source_ko": "언제나 쓸 수 있는 도구 레시피",
     "buy_price": "Not for sale",
@@ -3594,7 +3594,7 @@
     "materials_en": "4× Wood 4× Hardwood 4× Softwood",
     "materials_ko": "4× 목재 4× 견목 4× 침엽수",
     "source_en": "Tom Nook, Nook's Cranny",
-    "source_ko": "Tom Nook, 너굴상점",
+    "source_ko": "너굴, 너굴상점",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4002,7 +4002,7 @@
   {
     "id": "bunny_day_wand",
     "name_en": "Bunny Day wand",
-    "name_ko": "토끼의 날 지팡이",
+    "name_ko": "이스터 지팡이",
     "category_en": "Tools",
     "category_ko": "도구",
     "image_url": "https://dodo.ac/np/images/d/db/Bunny_Day_Wand_NH_DIY_Icon.png",
@@ -4026,7 +4026,7 @@
     "materials_en": "3× Tree branch",
     "materials_ko": "3× 나뭇가지",
     "source_en": "Tom Nook",
-    "source_ko": "톰 누크",
+    "source_ko": "너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4042,7 +4042,7 @@
     "materials_en": "1× Campfire 10× Wood",
     "materials_ko": "1× 모닥불 10× 나무",
     "source_en": "Tom Nook, Cranky villager",
-    "source_ko": "Tom, Nook 무뚝뚝 주민",
+    "source_ko": "너굴 무뚝뚝 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4058,7 +4058,7 @@
     "materials_en": "5× Tree branch 5× Wood",
     "materials_ko": "5× 나뭇가지 5× 나무",
     "source_en": "Tom Nook, Cranky villager",
-    "source_ko": "Tom, Nook 무뚝뚝 주민",
+    "source_ko": "너굴 무뚝뚝 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4074,7 +4074,7 @@
     "materials_en": "10× Tree branch",
     "materials_ko": "10× 나뭇가지",
     "source_en": "Tom Nook, Cranky villager",
-    "source_ko": "Tom, Nook 무뚝뚝 주민",
+    "source_ko": "너굴 무뚝뚝 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4170,7 +4170,7 @@
     "materials_en": "6× Wood",
     "materials_ko": "나무 6개",
     "source_en": "Tom Nook, Snooty villager",
-    "source_ko": "Tom, Nook 성숙 주민",
+    "source_ko": "너굴 성숙 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4250,7 +4250,7 @@
     "materials_en": "12× Wood",
     "materials_ko": "나무 12개",
     "source_en": "Tom Nook",
-    "source_ko": "톰 누크",
+    "source_ko": "너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4282,7 +4282,7 @@
     "materials_en": "18× Wood",
     "materials_ko": "18× 목재",
     "source_en": "Tom Nook, Lazy villager",
-    "source_ko": "Tom, Nook 먹보 주민",
+    "source_ko": "너굴 먹보 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4394,7 +4394,7 @@
     "materials_en": "4× Hardwood",
     "materials_ko": "4× 견목",
     "source_en": "Tom Nook, Peppy villager",
-    "source_ko": "Tom, Nook Peppy 주민",
+    "source_ko": "너굴 Peppy 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4410,7 +4410,7 @@
     "materials_en": "5× Hardwood",
     "materials_ko": "5× 견목",
     "source_en": "Tom Nook, Normal villager",
-    "source_ko": "Tom, Nook 친절 주민",
+    "source_ko": "너굴 친절 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4442,7 +4442,7 @@
     "materials_en": "15× Hardwood",
     "materials_ko": "단단한 나무 15개",
     "source_en": "Tom Nook, Cranky villager",
-    "source_ko": "Tom, Nook 무뚝뚝 주민",
+    "source_ko": "너굴 무뚝뚝 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4474,7 +4474,7 @@
     "materials_en": "12× Hardwood",
     "materials_ko": "12× 견목",
     "source_en": "Tom Nook, Peppy villager",
-    "source_ko": "Tom, Nook Peppy 주민",
+    "source_ko": "너굴 Peppy 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4554,7 +4554,7 @@
     "materials_en": "3× Wood",
     "materials_ko": "나무 3개",
     "source_en": "Tom Nook, Smug villager",
-    "source_ko": "Tom, Nook 느끼 주민",
+    "source_ko": "너굴 느끼 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4618,7 +4618,7 @@
     "materials_en": "1× Wooden-block toy 8× Softwood",
     "materials_ko": "1× 나무 블록 장난감 8× 침엽수",
     "source_en": "Tom Nook, Big sister villager",
-    "source_ko": "Tom, Nook 단순활발 주민",
+    "source_ko": "너굴 단순활발 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4682,7 +4682,7 @@
     "materials_en": "1× Wooden-block toy 5× Softwood 2× Iron nugget",
     "materials_ko": "1× 나무 블록 장난감 5× 침엽수 2× 철 덩어리",
     "source_en": "Tom Nook, Test Your DIY Skills",
-    "source_ko": "Tom Nook, 도전! DIY 레시피",
+    "source_ko": "너굴, 도전! DIY 레시피",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4730,7 +4730,7 @@
     "materials_en": "6× Hardwood 2× Iron nugget",
     "materials_ko": "6× 견목 2× 철 덩어리",
     "source_en": "Tom Nook, Peppy villager",
-    "source_ko": "Tom, Nook Peppy 주민",
+    "source_ko": "너굴 Peppy 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4762,7 +4762,7 @@
     "materials_en": "9× Hardwood 3× Iron nugget",
     "materials_ko": "9× 견목 3× 철 덩어리",
     "source_en": "Tom Nook, Normal villager",
-    "source_ko": "Tom, Nook 친절 주민",
+    "source_ko": "너굴 친절 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -4794,7 +4794,7 @@
     "materials_en": "5× Wood 7× Softwood",
     "materials_ko": "5× 목재 7× 침엽수",
     "source_en": "Tom Nook, Test Your DIY Skills",
-    "source_ko": "Tom Nook, 도전! DIY 레시피",
+    "source_ko": "너굴, 도전! DIY 레시피",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5050,7 +5050,7 @@
     "materials_en": "5× Wood 2× Iron nugget",
     "materials_ko": "5× 나무 2× 철 덩어리",
     "source_en": "Tom Nook, Cranky villager",
-    "source_ko": "Tom, Nook 무뚝뚝 주민",
+    "source_ko": "너굴 무뚝뚝 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5082,7 +5082,7 @@
     "materials_en": "2× Wood 5× Softwood",
     "materials_ko": "2× 목재 5× 침엽수",
     "source_en": "Tom Nook, Peppy villager",
-    "source_ko": "Tom, Nook Peppy 주민",
+    "source_ko": "너굴 Peppy 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5352,7 +5352,7 @@
     "image_url": "https://dodo.ac/np/images/4/40/Brick_Well_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Brick_well_(New_Horizons)",
     "materials_en": "8× Clay 5× Wood 1× Flimsy shovel",
-    "materials_ko": "8× 점토 5× 나무 1× 허술한 삽",
+    "materials_ko": "8× 점토 5× 나무 1× 엉성한 삽",
     "source_en": "Nook Stop",
     "source_ko": "너굴 포트",
     "buy_price": "2,000 Nook Miles",
@@ -5402,7 +5402,7 @@
     "materials_en": "8× Stone",
     "materials_ko": "돌× 8",
     "source_en": "Tom Nook, Lazy villager",
-    "source_ko": "Tom, Nook 먹보 주민",
+    "source_ko": "너굴 먹보 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5418,7 +5418,7 @@
     "materials_en": "6× Stone",
     "materials_ko": "돌× 6",
     "source_en": "Tom Nook, Snooty villager",
-    "source_ko": "Tom, Nook 성숙 주민",
+    "source_ko": "너굴 성숙 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5560,7 +5560,7 @@
     "image_url": "https://dodo.ac/np/images/a/af/Simple_Well_NH_DIY_Icon.png",
     "source_url": "https://nookipedia.com/wiki/Item:Simple_well_(New_Horizons)",
     "materials_en": "15× Stone 1× Flimsy shovel",
-    "materials_ko": "15× 돌 1× 허술한 삽",
+    "materials_ko": "15× 돌 1× 엉성한 삽",
     "source_en": "Nook Stop",
     "source_ko": "너굴 포트",
     "buy_price": "2,000 Nook Miles",
@@ -5770,7 +5770,7 @@
     "materials_en": "3× Iron nugget",
     "materials_ko": "철 덩어리 3개",
     "source_en": "Tom Nook, Big sister villager",
-    "source_ko": "Tom, Nook 단순활발 주민",
+    "source_ko": "너굴 단순활발 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5786,7 +5786,7 @@
     "materials_en": "5× Iron nugget",
     "materials_ko": "철 덩어리 5개",
     "source_en": "Tom Nook, Big sister villager",
-    "source_ko": "Tom, Nook 단순활발 주민",
+    "source_ko": "너굴 단순활발 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -5914,7 +5914,7 @@
     "materials_en": "2× Iron nugget 6× Clay",
     "materials_ko": "2× 철 덩어리 6× 점토",
     "source_en": "Tom Nook, Lazy villager",
-    "source_ko": "Tom, Nook 먹보 주민",
+    "source_ko": "너굴 먹보 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -6634,7 +6634,7 @@
     "materials_en": "10× Orange 4× Wood",
     "materials_ko": "10× 주황색 4× 목재",
     "source_en": "Tom Nook, Lazy villager",
-    "source_ko": "Tom, Nook 먹보 주민",
+    "source_ko": "너굴 먹보 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -6650,7 +6650,7 @@
     "materials_en": "10× Peach 5× Wood",
     "materials_ko": "10× 복숭아 5× 나무",
     "source_en": "Tom Nook, Normal villager",
-    "source_ko": "Tom, Nook 친절 주민",
+    "source_ko": "너굴 친절 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -6666,7 +6666,7 @@
     "materials_en": "10× Pear 5× Wood",
     "materials_ko": "배 10개, 나무 5개",
     "source_en": "Tom Nook, Jock villager",
-    "source_ko": "Tom, Nook 운동광 주민",
+    "source_ko": "너굴 운동광 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -6682,7 +6682,7 @@
     "materials_en": "10× Pear 6× Softwood",
     "materials_ko": "배 10개, 침엽수 6개",
     "source_en": "Tom Nook, Jock villager",
-    "source_ko": "Tom, Nook 운동광 주민",
+    "source_ko": "너굴 운동광 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -6698,7 +6698,7 @@
     "materials_en": "10× Apple 4× Wood",
     "materials_ko": "사과 10개, 나무 4개",
     "source_en": "Tom Nook, Big sister villager",
-    "source_ko": "Tom, Nook 단순활발 주민",
+    "source_ko": "너굴 단순활발 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -6714,7 +6714,7 @@
     "materials_en": "10× Apple 2× Iron nugget",
     "materials_ko": "사과 10개, 철 덩어리 2개",
     "source_en": "Tom Nook, Big sister villager",
-    "source_ko": "Tom, Nook 단순활발 주민",
+    "source_ko": "너굴 단순활발 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -8802,7 +8802,7 @@
   {
     "id": "bunny_day_table",
     "name_en": "Bunny Day table",
-    "name_ko": "토끼의 날 테이블",
+    "name_ko": "이스터 테이블",
     "category_en": "Housewares",
     "category_ko": "하우스웨어",
     "image_url": "https://dodo.ac/np/images/8/8c/Bunny_Day_Table_NH_DIY_Icon.png",
@@ -8834,7 +8834,7 @@
   {
     "id": "bunny_day_vanity",
     "name_en": "Bunny Day vanity",
-    "name_ko": "토끼의 날 화장대",
+    "name_ko": "이스터 화장대",
     "category_en": "Housewares",
     "category_ko": "하우스웨어",
     "image_url": "https://dodo.ac/np/images/0/0b/Bunny_Day_Vanity_NH_DIY_Icon.png",
@@ -8866,7 +8866,7 @@
   {
     "id": "bunny_day_merry_balloons",
     "name_en": "Bunny Day merry balloons",
-    "name_ko": "토끼의 날 메리 풍선",
+    "name_ko": "이스터 메리 풍선",
     "category_en": "Housewares",
     "category_ko": "하우스웨어",
     "image_url": "https://dodo.ac/np/images/7/74/Bunny_Day_Merry_Balloons_NH_DIY_Icon.png",
@@ -8882,7 +8882,7 @@
   {
     "id": "bunny_day_festive_balloons",
     "name_en": "Bunny Day festive balloons",
-    "name_ko": "토끼의 날 축제 풍선",
+    "name_ko": "이스터 축제 풍선",
     "category_en": "Housewares",
     "category_ko": "하우스웨어",
     "image_url": "https://dodo.ac/np/images/0/0d/Bunny_Day_Festive_Balloons_NH_DIY_Icon.png",
@@ -8954,7 +8954,7 @@
     "materials_en": "3× Wood 1× Iron nugget",
     "materials_ko": "3× 나무 1× 철 덩어리",
     "source_en": "Tom Nook, Smug villager",
-    "source_ko": "Tom, Nook 느끼 주민",
+    "source_ko": "너굴 느끼 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -9194,7 +9194,7 @@
     "materials_en": "4× Clay",
     "materials_ko": "4× 점토",
     "source_en": "Tom Nook, Snooty villager",
-    "source_ko": "Tom, Nook 성숙 주민",
+    "source_ko": "너굴 성숙 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -9210,7 +9210,7 @@
     "materials_en": "5× Clay",
     "materials_ko": "5× 점토",
     "source_en": "Tom Nook, Cranky villager",
-    "source_ko": "Tom, Nook 무뚝뚝 주민",
+    "source_ko": "너굴 무뚝뚝 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -9562,7 +9562,7 @@
     "materials_en": "10× Cherry 2× Iron nugget",
     "materials_ko": "체리 10개, 철 덩어리 2개",
     "source_en": "Tom Nook, Peppy villager",
-    "source_ko": "Tom, Nook Peppy 주민",
+    "source_ko": "너굴 Peppy 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -9578,7 +9578,7 @@
     "materials_en": "10× Peach 4× Softwood",
     "materials_ko": "10× 복숭아 4× 침엽수",
     "source_en": "Tom Nook, Normal villager",
-    "source_ko": "Tom, Nook 친절 주민",
+    "source_ko": "너굴 친절 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -10714,7 +10714,7 @@
     "materials_en": "10× Orange 2× Wood",
     "materials_ko": "10× 주황색 2× 나무",
     "source_en": "Tom Nook, Lazy villager",
-    "source_ko": "Tom, Nook 먹보 주민",
+    "source_ko": "너굴 먹보 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -10730,7 +10730,7 @@
     "materials_en": "10× Cherry 2× Clay",
     "materials_ko": "10× 체리 2× 점토",
     "source_en": "Tom Nook, Peppy villager",
-    "source_ko": "Tom, Nook Peppy 주민",
+    "source_ko": "너굴 Peppy 주민",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11002,7 +11002,7 @@
     "materials_en": "3× Red windflowers 3× White windflowers 3× Orange windflowers",
     "materials_ko": "빨간 윈드플라워× 3개 흰색 윈드플라워× 3개 주황색 윈드플라워× 3개",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11050,7 +11050,7 @@
     "materials_en": "3× White mums 3× Yellow mums 3× Red mums",
     "materials_ko": "3× 흰 국화 3× 노란 국화 3× 빨간 국화",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11098,7 +11098,7 @@
     "materials_en": "3× Yellow cosmos 3× White cosmos 3× Red cosmos",
     "materials_ko": "3× 옐로우 코스모스 3× 화이트 코스모스 3× 레드 코스모스",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11146,7 +11146,7 @@
     "materials_en": "3× Red tulips 3× Yellow tulips 3× White tulips",
     "materials_ko": "3× 빨간 튤립 3× 노란 튤립 3× 흰 튤립",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11194,7 +11194,7 @@
     "materials_en": "3× Red roses 3× White roses 3× Yellow roses",
     "materials_ko": "빨간 장미 3개 흰 장미 3개 노란 장미 3개",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11274,7 +11274,7 @@
     "materials_en": "3× Yellow pansies 3× White pansies 3× Red pansies",
     "materials_ko": "노란 팬지 3개, 흰색 팬지 3개, 빨간 팬지 3개",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11322,7 +11322,7 @@
     "materials_en": "3× White hyacinths 3× Red hyacinths 3× Yellow hyacinths",
     "materials_ko": "흰 히아신스 3개 × 붉은 히아신스 3개 노란 히아신스 3개",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11370,7 +11370,7 @@
     "materials_en": "3× White lilies 3× Red lilies 3× Yellow lilies",
     "materials_ko": "흰 백합 3개 빨간 백합 3개 노란 백합 3개",
     "source_en": "Any villager, Tom Nook",
-    "source_ko": "마을 주민, Tom Nook",
+    "source_ko": "마을 주민, 너굴",
     "buy_price": "Not for sale",
     "sell_price": "",
     "owned": false
@@ -11410,7 +11410,7 @@
   {
     "id": "bunny_day_wall_clock",
     "name_en": "Bunny Day wall clock",
-    "name_ko": "토끼의 날 벽시계",
+    "name_ko": "이스터 벽시계",
     "category_en": "Wall-mounted",
     "category_ko": "벽걸이",
     "image_url": "https://dodo.ac/np/images/9/9a/Bunny_Day_Wall_Clock_NH_DIY_Icon.png",
@@ -11426,7 +11426,7 @@
   {
     "id": "bunny_day_glowy_garland",
     "name_en": "Bunny Day glowy garland",
-    "name_ko": "토끼의 날 빛나는 화환",
+    "name_ko": "이스터 빛나는 화환",
     "category_en": "Wall-mounted",
     "category_ko": "벽걸이",
     "image_url": "https://dodo.ac/np/images/9/99/Bunny_Day_Glowy_Garland_NH_DIY_Icon.png",
@@ -11442,7 +11442,7 @@
   {
     "id": "bunny_day_wreath",
     "name_en": "Bunny Day wreath",
-    "name_ko": "토끼의 날 화환",
+    "name_ko": "이스터 화환",
     "category_en": "Wall-mounted",
     "category_ko": "벽걸이",
     "image_url": "https://dodo.ac/np/images/d/d5/Bunny_Day_Wreath_NH_DIY_Icon.png",
@@ -13090,7 +13090,7 @@
   {
     "id": "bunny_day_wall",
     "name_en": "Bunny Day wall",
-    "name_ko": "토끼의 날 벽",
+    "name_ko": "이스터 벽",
     "category_en": "Interior",
     "category_ko": "인테리어",
     "image_url": "https://dodo.ac/np/images/8/80/Bunny_Day_Wall_NH_DIY_Icon.png",
@@ -14754,7 +14754,7 @@
   {
     "id": "bunny_day_crown",
     "name_en": "Bunny Day crown",
-    "name_ko": "토끼의 날 왕관",
+    "name_ko": "이스터 왕관",
     "category_en": "Clothing",
     "category_ko": "의류",
     "image_url": "https://dodo.ac/np/images/0/01/Bunny_Day_Crown_NH_DIY_Icon.png",
