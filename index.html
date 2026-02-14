@@ -14,22 +14,33 @@
       </header>
 
       <section class="controls">
-        <div class="filter-group" id="categoryFilters">
-          <button class="filter active" data-category="all">전체</button>
+        <div class="control-block control-block-category">
+          <p class="control-title">카테고리</p>
+          <div class="filter-group" id="categoryFilters">
+            <button class="filter active" data-category="all">전체</button>
+          </div>
         </div>
-        <div class="filter-group" id="ownedFilters">
-          <button class="filter active" data-owned="all">전체 보기</button>
-          <button class="filter" data-owned="owned">보유한 것만</button>
-          <button class="filter" data-owned="unowned">미보유만</button>
+        <div class="control-block control-block-owned">
+          <p class="control-title">보유 상태</p>
+          <div class="filter-group" id="ownedFilters">
+            <button class="filter active" data-owned="all">전체 보기</button>
+            <button class="filter" data-owned="owned">보유한 것만</button>
+            <button class="filter" data-owned="unowned">미보유만</button>
+          </div>
         </div>
-        <div class="bulk-actions">
-          <button class="bulk-btn" id="markVisibleOwned">전체 레시피 보유</button>
-          <button class="bulk-btn" id="unmarkVisibleOwned">전체 레시피 해제</button>
+        <div class="control-block control-block-bulk">
+          <p class="control-title">전체 체크</p>
+          <div class="bulk-actions">
+            <button class="bulk-btn" id="markVisibleOwned">전체 레시피 보유</button>
+            <button class="bulk-btn" id="unmarkVisibleOwned">전체 레시피 해제</button>
+          </div>
         </div>
-        <label class="search-wrap">
-          <span>검색</span>
-          <input id="searchInput" type="text" placeholder="레시피 이름 검색" />
-        </label>
+        <div class="control-block control-block-search">
+          <label class="search-wrap">
+            <span>검색</span>
+            <input id="searchInput" type="text" placeholder="레시피 이름 검색" />
+          </label>
+        </div>
       </section>
 
       <section class="stats" id="stats"></section>
@@ -15103,7 +15114,8 @@
         });
 
         markVisibleOwnedBtn.addEventListener("click", () => {
-          for (const recipe of allRecipes) {
+          const visibleRecipes = getFilteredRecipes();
+          for (const recipe of visibleRecipes) {
             ownedIds.add(recipe.id);
           }
           saveOwned();
@@ -15111,7 +15123,8 @@
         });
 
         unmarkVisibleOwnedBtn.addEventListener("click", () => {
-          for (const recipe of allRecipes) {
+          const visibleRecipes = getFilteredRecipes();
+          for (const recipe of visibleRecipes) {
             ownedIds.delete(recipe.id);
           }
           saveOwned();

@@ -37,11 +37,25 @@ body {
 
 .controls {
   margin: 20px 0 12px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  align-items: center;
-  justify-content: space-between;
+  align-items: stretch;
+}
+
+.control-block {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px;
+  background: #fff;
+}
+
+.control-title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.02em;
 }
 
 .filter-group {
@@ -52,6 +66,7 @@ body {
 
 .bulk-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -83,15 +98,59 @@ body {
   color: #1f4b25;
 }
 
+.control-block-category {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, #f8fcf6 0%, #ffffff 55%);
+}
+
+.control-block-category .filter {
+  border-radius: 999px;
+}
+
+.control-block-owned {
+  background: linear-gradient(180deg, #f5f9ff 0%, #ffffff 55%);
+}
+
+.control-block-owned .filter {
+  border-radius: 9px;
+}
+
+.control-block-owned .filter.active {
+  border-color: #3f6fb8;
+  background: #e8f0ff;
+  color: #204678;
+}
+
+.control-block-bulk {
+  background: linear-gradient(180deg, #fff7f1 0%, #ffffff 55%);
+}
+
+.control-block-bulk .bulk-btn:first-child {
+  border-color: #6ea763;
+  background: #eef8eb;
+  color: #21522a;
+}
+
+.control-block-bulk .bulk-btn:last-child {
+  border-color: #d9b37f;
+  background: #fff5e8;
+  color: #7b4a16;
+}
+
+.control-block-bulk .bulk-btn:hover {
+  filter: brightness(0.97);
+}
+
 .search-wrap {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 10px;
   color: var(--muted);
 }
 
 .search-wrap input {
-  width: 230px;
+  width: 100%;
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 8px 10px;
@@ -113,6 +172,12 @@ body {
 @media (max-width: 1100px) {
   .grid {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -230,7 +295,7 @@ body {
 
 @media (max-width: 620px) {
   .controls {
-    align-items: stretch;
+    grid-template-columns: 1fr;
   }
 
   .search-wrap {
@@ -239,8 +304,7 @@ body {
   }
 
   .search-wrap input {
-    width: 100%;
-    max-width: 260px;
+    max-width: none;
   }
 
   .bulk-actions {
